@@ -25,7 +25,7 @@ public class SaleOrder {
     @ManyToOne
     private Customer customer;
 
-    @OneToMany(mappedBy = "saleOrder", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "SaleOrder", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<SaleOrderItem> items = new ArrayList<>();
 
     private Double totalAmount;
